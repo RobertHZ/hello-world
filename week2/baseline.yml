@@ -1,0 +1,8 @@
+---
+# A very simple play to baseline all nodes in the group `simple'
+- hosts: basic
+  gather_facts: true
+  become_user: root
+  become_method: sudo
+  roles:
+      - common

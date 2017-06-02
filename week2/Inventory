@@ -1,0 +1,12 @@
+[localhost]
+127.0.0.1 ansible_connection=local
+
+[basic]
+itpa-ec2-a
+
+[advanced]
+itpa-ec2-b
+
+[cloud:children]
+basic
+advanced

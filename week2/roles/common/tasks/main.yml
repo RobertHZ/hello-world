@@ -1,0 +1,13 @@
+---
+- name: WEEK2 | Canary test
+  ping:
+
+
+### Make changes here!
+- name: WEEK2 | Software install
+  yum: 
+      name: {{ item }}
+      state: installed
+  with_items:
+      - nano
+      - fail2ban
